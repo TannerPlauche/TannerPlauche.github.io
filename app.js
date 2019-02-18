@@ -1,5 +1,5 @@
 (function runApp() {
-    let countDisplay = Document.getElementById('count');
+    let countDisplay = document.getElementById('count');
     let time;
     let timer;
 
