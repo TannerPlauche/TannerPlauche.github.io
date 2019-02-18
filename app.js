@@ -1,21 +1,23 @@
 (function runApp() {
-    let countDisplay = document.getElementById('count');
-    let time;
+    console.log('Don\'t look at me, I\'m hideous! --Cueur Delacour _ Harry Potter.')
+    let countDisplay = document.querySelector('#count');
+    let time = 0;
     let timer;
 
     function startTimer() {
-        time = Window.setInterval(() => {
-            incrementTime();
+        window.setInterval(() => {
+            incrementTime(1);
             setDisplayCount(time);
         }, 1000);
     }
 
-    function incrementTime(){
-        time += 1;
+    function incrementTime(inc) {
+        time += inc;
     }
 
     function setDisplayCount(num) {
-        countDisplay.INNERHTML = num;
+        countDisplay.textContent = num;
     }
 
+    startTimer();
 })();
